@@ -8,8 +8,9 @@ class Service {
 
   constructor() {
     this.client
-      .setEndpoint(conf.appWriteUrl)
-      .setProject(conf.appWriteProjectId);
+      .setEndpoint(conf.appwriteUrl)
+      .setProject(conf.appw
+        riteProjectId);
 
     this.databases = new Databases(this.client);
     this.storage = new Storage(this.client);

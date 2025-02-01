@@ -49,12 +49,12 @@ function Header() {
           </Link>
         </div>
         <ul>
-          {navItems.map((item) => {
+        {navItems.map((item) => {
             if (item.active) {
               return <li key={item.name}>
                 <Button onClick={() => navigate(item.slug)} label={item.name}/>
               </li>;
-            } else {
+            } else { 
               return null;
             }
           })}

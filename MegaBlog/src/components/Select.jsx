@@ -9,7 +9,16 @@ let Select = React.forwardRef(function Select({
     const id = useId();
     
     return(
-        <></>
+        <div className="w-full">
+            <label htmlFor="id"></label>
+            <select name="" id="option">
+                {option?.map((value) => (
+                    <option value="value" key={value}>
+                        {value}
+                        </option>
+                ))}
+            </select>
+        </div>
     )
 
 

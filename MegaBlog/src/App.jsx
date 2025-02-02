@@ -26,18 +26,25 @@ function App() {
       });
   }, []);
 
-  return !loading ? (
-    <div className="min-h-screen flex flex-wrap content-between bg-gray-400 ">
-      <div className="w-full block">
+  return (
+    <>
+    <h1 className="text-3xl font-bold underline">Tajinder singh</h1>
+    <h1
+    >Dandiwal</h1>
+    </>
+  )
+  //  (!loading ? (
+  //   <div className="min-h-screen flex flex-wrap content-between bg-gray-400 ">
+  //     <div className="w-full block">
         
-        <Header />
-        <main>
-          TODO: <Outlet />
-        </main>
-        <Footer />
-      </div>
-    </div>
-  ) : null;
+  //       {/* <Header /> */}
+  //       <main>
+  //         {/* TODO: <Outlet /> */}
+  //       </main>
+  //       {/* <Footer /> */}
+  //     </div>
+  //   </div>
+  // ) : null)
 }
 
 export default App;
